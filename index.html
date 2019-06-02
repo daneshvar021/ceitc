@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>گروه دانش بنیان برنامه نویسی و طراحی وب شریف</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<!-- Google Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/misc.css">
+	<link rel="stylesheet" href="css/orange-scheme.css">
+	<!-- JavaScripts -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+</head>
+<style>
+@font-face {
+font-family:'yekan';
+src: url('font/yekan.eot?#') format('eot'),
+	url('font/yekan.woff') format('woff'),
+url('font/yekan.ttf') format('truetype');
+}
+		.yekan{font-family:yekan,'yekan',tahoma;}
+	h1,h2,h3,h4,h5,h6,h7,h8,a,ul,li,nav,p{font-family: yekan,'yekan',tahoma;}
+	
+	#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#FC7E3C; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+	
+	</style>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+	</script>	
+	
+<body>
+<div class="yekan">
+	<div class="responsive_menu">
+        <ul class="main_menu">
+            <li><a style="font-family:yekan,'yekan',tahoma;" href="index.html">خانه</a></li>
+            <li><a style="font-family:yekan,'yekan',tahoma;" href="portfolio.html">نمونه کارها</a></li>
+            <li><a style="font-family:yekan,'yekan',tahoma;" href="blog.html">بلاگ</a></li>
+            <li><a style="font-family:yekan,'yekan',tahoma;" href="archives.html">سوالات متداول</a></li>
+            <li><a style="font-family:yekan,'yekan',tahoma;" href="contact.html">تماس با ما</a></li>
+        </ul> <!-- /.main_menu -->
+    </div> <!-- /.responsive_menu -->
+
+	<header class="site-header clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pull-left logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="Medigo by templatemo">
+						</a>
+					</div>	<!-- /.logo -->
+					<p style="padding-left:165px; padding-top:8px; color:#F87318;">تلفن مشاوره رایگان:09199593867</p>
+					<div class="main-navigation pull-right">
+						<nav class="main-nav visible-md visible-lg">
+							<ul class="sf-menu">
+								<li><a href="contact.html"><p>تماس با ما</p></a></li>
+								<li><a href="portfolio.html"><p>نمونه کارها</p></a></li>
+								<li><a href="blog.html"><p>بلاگ</p></a></li>
+								<li><a href="archives.html"><p>سوالات متداول</p></a></li>
+								<li class="active" ><a class="yekan" href="index.html"><p>خانه</p></a></li>
+							</ul> <!-- /.sf-menu -->
+						</nav> <!-- /.main-nav -->
+						<!-- This one in here is responsive menu for tablet and mobiles -->
+					    <div class="responsive-navigation visible-sm visible-xs">
+					        <a href="#nogo" class="menu-toggle-btn">
+					            <i class="fa fa-bars"></i>
+					        </a>
+					    </div> <!-- /responsive_navigation -->
+					</div> <!-- /.main-navigation -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</header> <!-- /.site-header -->
+
+	<section id="homeIntro" class="parallax first-widget">
+	    <div class="parallax-overlay">
+		    <div class="container home-intro-content">
+		        <div class="row">
+		        	<div class="col-md-12">
+		        		<h2 class="yekan">پیاده سازی ایده های خود را به مابسپارید</h2>
+					<p>ما آماده ارائه راه حل های دیجیتال خلاقانه و کارآمد برای کسب و کار آنلاین شما هستیم. طراحی سایت و توسعه نرم افزار های تحت وب تخصص ماست</p>
+		        		<a href="contact.html" class="large-button white-color">تماس با ما <i class="icon-button fa fa-bell-o"></i></a>
+		        	</div> <!-- /.col-md-12 -->
+		        </div> <!-- /.row -->
+		    </div> <!-- /.container -->
+	    </div> <!-- /.parallax-overlay -->
+	</section> <!-- /#homeIntro -->
+
+	<section class="cta clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="cta-title">درباره پروژه طراحی وب خود با ما به طور رایگان مشورت کنید</h4>
+				<a href="contact.html" class="main-button accent-color">0919-959-3867<i class="icon-button fa fa-barcode"></i></a>
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.cta -->
+
+	<section class="light-content services">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 col-sm-4">
+					<div class="service-box-wrap">
+						<div class="service-icon-wrap">
+							<i class="fa fa-umbrella fa-2x"></i>
+						</div> <!-- /.service-icon-wrap -->
+						<div class="service-cnt-wrap">
+							<h3 class="service-title">تولید محتوا</h3>
+							<p>شما با ایجاد محتوای جذاب، مفید و مرتبط می‌توانید کاربران واقعی خود را جذب نمایید، اطلاعات مورد نیازشان را در اختیار آنها قرار دهید و کاری کنید که اعتماد آنها جلب شود. بدین ترتیب آنها تبدیل به مشتریان وفادار شما خواهند شد و همواره برای کسب اطلاعات به سراغ شما می‌آیند</p>
+						</div> <!-- /.service-cnt-wrap -->
+					</div> <!-- /.service-box-wrap -->
+				</div> <!-- /.col-md-4 -->
+
+				<div class="col-md-4 col-sm-4">
+					<div class="service-box-wrap">
+						<div class="service-icon-wrap">
+							<i class="fa fa-mobile-phone fa-2x"></i>
+						</div> <!-- /.service-icon-wrap -->
+						<div class="service-cnt-wrap">
+							<h3 class="service-title">طراحی واکنش گرا</h3>
+							<p>سایت واکنش گرا یا سایت ریسپانسیو سایتی است که با ابعاد و رزولوشن دستگاههای مختلف سازگاری دارد و کاربران بدون توجه به اینکه صفحه نمایش دستگاهشان کوچک باشد یا بزرگ میتوانند سایت را بررسی کنند</p>
+						</div> <!-- /.service-cnt-wrap -->
+					</div> <!-- /.service-box-wrap -->
+				</div> <!-- /.col-md-4 -->
+
+				<div class="col-md-4 col-sm-4">
+					<div class="service-box-wrap">
+						<div class="service-icon-wrap">
+							<i class="fa fa-pencil-square-o fa-2x"></i>
+						</div> <!-- /.service-icon-wrap -->
+						<div class="service-cnt-wrap">
+							<h3 class="service-title">طراحی اصولی وبسایت</h3>
+							<p>طراحی اصولی سایت شامل مولفه های مختلفی میباشد که با رعایت آنها میتوان به یک وبسایت استاندارد دست پیدا کرد از جمله نحوه قرار گیری تصاویر نوع قلم اصول سئو سازگاری با همه مرورگر ها</p>
+						</div> <!-- /.service-cnt-wrap -->
+					</div> <!-- /.service-box-wrap -->
+				</div> <!-- /.col-md-4 -->
+
+			</div>
+
+			<div class="row">
+				
+				<div class="col-md-4 col-sm-4">
+					<div class="service-box-wrap">
+						<div class="service-icon-wrap">
+							<i class="fa fa-code fa-2x"></i>
+						</div> <!-- /.service-icon-wrap -->
+						<div class="service-cnt-wrap">
+							<h3 class="service-title">استفاده از آخرین فناوری کد نویسی</h3>
+							<p>مطمئناً، تکنولوژی به کار رفته در وب سایت، بسیار مهم و حیاتی است. اگر وب سایت شما با تکنولوژی های روز و متدهای جدید پیاده سازی نشود، مسلماً ظرف مدت کوتاهی به فکر طراحی دوباره آن خواهید افتاد. این مورد در طراحی های ما اتفاق نخواهد افتاد </p>
+						</div> <!-- /.service-cnt-wrap -->
+					</div> <!-- /.service-box-wrap -->
+				</div> <!-- /.col-md-4 -->
+
+				<div class="col-md-4 col-sm-4">
+					<div class="service-box-wrap">
+						<div class="service-icon-wrap">
+							<i class="fa fa-eye-slash fa-2x"></i>
+						</div> <!-- /.service-icon-wrap -->
+						<div class="service-cnt-wrap">
+							<h3 class="service-title">سئو و بهینه سازی</h3>
+							<p>بهینه‌سازی وب‌سایت برای موتورهای جستجو (سئو) به معنی ویرایش عناصر وب‌سایت و بالا بردن اعتبار آن در فضای اینترنت است. بدین ترتیب شما می‌توانید بهترین رتبه را در موتورهای جستجوگر کسب کنید. در نتیجه وقتی کاربر عبارات مرتبط با کار شما را جستجو بکند، نام شما را در صفحه اول خواهد دید و حتما به شما سر خواهد زد</p>
+						</div> <!-- /.service-cnt-wrap -->
+					</div> <!-- /.service-box-wrap -->
+				</div> <!-- /.col-md-4 -->
+
+				<div class="col-md-4 col-sm-4">
+					<div class="service-box-wrap">
+						<div class="service-icon-wrap">
+							<i class="fa fa-suitcase fa-2x"></i>
+						</div> <!-- /.service-icon-wrap -->
+						<div class="service-cnt-wrap">
+							<h3 class="service-title">تبلیغات اینترنتی</h3>
+							<p>با تبلیغات درست و هدفمند شما می‌توانید تنها مشتریان واقعی خود را هدف قرار دهید. بدین ترتیب نه تنها تاثیر تبلیغات شما تا حد زیادی افزایش می‌یابد، که در هزینه‌ها نیز صرفه‌جویی بسیاری خواهد شد. ما می‌توانیم در مدیریت این تبلیغات به شما کمک کنیم</p>
+						</div> <!-- /.service-cnt-wrap -->
+					</div> <!-- /.service-box-wrap -->
+				</div> <!-- /.col-md-4 -->
+
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.services -->
+
+	<section class="dark-content portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header">
+						<h2 class="section-title">بهترین پروژه های انجام شده</h2>
+						<p class="section-desc">!همه آن چیزی که برای یک طراحی حرفه ای نیاز دارید اینجاست</p>
+					</div> <!-- /.section-header -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+		
+		<div id="portfolio-carousel" class="portfolio-carousel portfolio-holder">
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">پنل ادمین</span>
+						<h3 class="portfolio-title"><a href="project-slideshow.html">پنل ادمین طراحی شده جهت مدیریت سایت</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project1.png" title="پنل ادمین">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project1.png" alt="Visual Admin">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب آماده</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">قالب طراحی شده چند منظوره</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project2.png" title="قالب چند منظوره">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project2.png" alt="Compass Template">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">طراحی واکنش گرا</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">مناسب برای وبلاگ ها</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project3.png" title="طراحی واکنش گرا">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project3.png" alt="Awesome Theme">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب نمونه کار</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">مناسب برای نمونه ارائه کار</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project4.png" title="قالب نمونه کار">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project4.png" alt="Volton Personal Site">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب سبز</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">طراحی مربعی</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project5.png" title="قالب مربعی">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project5.png" alt="Rectangle Design">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">نمونه کار آخر</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">سایت گالری</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project6.png" title="سایت گالری">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project6.png" alt="Masonry Gallery">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب اختصاصی</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">قالب گروس</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project7.png" title="قالب طراحی شده">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project7.png" alt="Gloss Template">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب اختصاصی</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">قالب گروس</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project8.png" title="قالب طراحی شده">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project8.png" alt="Gloss Template">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب اختصاصی</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">قالب گروس</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project9.png" title="قالب طراحی شده">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project9.png" alt="Gloss Template">
+				</div>
+			</div> <!-- /.item -->
+			<div class="item">
+				<div class="thumb-post">
+					<div class="overlay">
+						<div class="overlay-inner">
+							<div class="portfolio-infos">
+								<span class="meta-category">قالب اختصاصی</span>
+								<h3 class="portfolio-title"><a href="project-slideshow.html">قالب گروس</a></h3>
+							</div>
+							<div class="portfolio-expand">
+								<a class="fancybox" href="images/includes/project10.png" title="قالب طراحی شده">
+									<i class="fa fa-expand"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="images/includes/project10.png" alt="Gloss Template">
+				</div>
+			</div> <!-- /.item -->
+		</div> <!-- /#owl-demo -->
+	</section> <!-- /.portfolio-holder -->
+
+	<section class="testimonials-widget">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="bxslider">
+						<div class="testimonial">
+							<div class="testimonial-content">
+								<span class="testimonial-author">سید پارسا صدرالدینی - توسعه دهنده سمت سرور</span>
+								<p class="testimonial-description">فارغ التحصیل رشته فناوری اطلاعات علاقه مند به برنامه نویسی سمت سرور با فریم ورک هایی مثل لاراول</p>
+							</div>
+						</div>
+						<div class="testimonial">
+							<div class="testimonial-content">
+								<span class="testimonial-author">محمد مهدی دانشور جلایری - طراح و برنامه نویس وب</span>
+								<p class="testimonial-description">محمد مهدی هستم دانشجوی مهندسی کامپیوتر مسلط به زبان های برنامه نویسی متداول تحت وب و علاقه مند به برنامه نویسی در حوزه ویندوز اپلیکیشن و فعالیت در حوزه آموزشی</p>
+							</div>
+						</div>
+						
+					</div> <!-- /.bxslider -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.testimonials-widget -->
+
+	<section class="light-content our-team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header">
+						<h2 class="section-title">ویژگی ها طراحی وب ما</h2>
+						<p class="section-desc">ویژگی هایی که ما را از دیگر رقبا متمایز میکند</p>
+					</div> <!-- /.section-header -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+		<div class="team-members" dir="rtl">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4 col-sm-4">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="images/includes/member1.png" alt="">
+								<span class="member-role">چرا تیم ما!</span>
+							</div>
+							<div class="member-content">
+								<h4 class="member-name">ویژگی های طراحی سایت ما</h4>
+								<p>ارائه سیستم های مدیریت محتوا ساده و کاربردی
+طراحی سایت های با استاندارد های جهانی
+طراحی سایت با اصول سئو
+ارائه طرح های گرافیکی اختصاصی
+پشتیبانی ۲۴ ساعته
+ارائه کلاس آموزشی برای مدیریت سایت در زمان تحویل سایت
+ارائه پشتیبان در زمان تحویل وب سایت به مشتری
+امکان توسعه سایت در آینده</p>
+							</div>
+						</div> <!-- /.team-member -->
+					</div> <!-- /.col-md-4 -->
+
+					<div class="col-md-4 col-sm-4">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="images/includes/member2.png" alt="">
+								<span class="member-role">طراحی بهینه و استاندارد</span>
+							</div>
+							<div class="member-content">
+								<h4 class="member-name">طراحی سایت استاندارد و بهینه وب سایت</h4>
+								<p>نکاتی که پس از طراحی سایت باید مد نظر قرار داد ، تولید محتوای کاربردی و مفید برای وب سایت است . این نکته را در نظر داشته باشید که پس از اتمام طراحی وب سایت تان باید به دنبال تهیه تصاویر و محتوای قابل انتشار در وب سایت تان باشید . در تولید محتوا و تصاویر پس از طراحی سایت این نکته را در نظر داشته باشید که محتوا باید براساس اصول سئو در وب سایت قرار گیرد . </p>
+							</div>
+						</div> <!-- /.team-member -->
+					</div> <!-- /.col-md-4 -->
+
+					<div class="col-md-4 col-sm-4">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="images/includes/member3.png" alt="">
+								<span class="member-role">فناوری جدید</span>
+							</div>
+							<div class="member-content">
+								<h4 class="member-name">استفاده از به روز ترین فناوری</h4>
+								<p>طراحی سایت ما در طراحی های خود از بروز ترین فناوری های طراحی سایت در پروژه های خود استفاده می نماید ، طراحی سایت ما با استفاده از جدیدترین استاندارد های طراحی سایت و سئو انجام می گیرد ، از ویژگی های بارز مورد استفاده در طراحی سایت ما طراحی سایت ریسپانسیو یا موبایل فرندلی ، طراحی با استاندارد های سئو می باشد .</p>
+							</div>
+						</div> <!-- /.team-member -->
+					</div> <!-- /.col-md-4 -->
+
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.team-members -->
+	</section> <!-- /.our-team -->
+	
+	<section id="blogPosts" class="parallax">
+	    <div class="parallax-overlay">
+		    <div class="container">
+		        <div class="row">
+		        	<div class="col-md-12">
+		        		<div class="section-header">
+							<h2 class="section-title">آخرین مطالب از بلاگ سایت</h2>
+							<p class="section-desc">مقالات و مطالب کاربردی که باید مدیران وب سایت ها بدانند</p>
+						</div> <!-- /.section-header -->
+		        	</div> <!-- /.col-md-12 -->
+		        </div> <!-- /.row -->
+		        <div class="row latest-posts">
+		        	<div class="col-md-4 col-sm-6">
+		        		<div class="blog-post clearfix">
+		        			<div class="thumb-post">
+		        				<a href="blog-single.html"><img src="images/includes/blogthumb1.jpg" alt="" class="img-circle"></a>
+		        			</div>
+		        			<div class="blog-post-content">
+		        				<h4 class="post-title"><a href="blog-single.html">نحوه ایجاد نقشه در بخش تماس با ما</a></h4>
+		        				<span class="meta-post-date">12 February 2084</span>
+		        			</div>
+		        		</div> <!-- /.blog-post -->
+		        	</div> <!-- /.col-md-4 -->
+		        	<div class="col-md-4 col-sm-6">
+		        		<div class="blog-post clearfix">
+		        			<div class="thumb-post">
+		        				<a href="blog-single.html"><img src="images/includes/blogthumb2.jpg" alt="" class="img-circle"></a>
+		        			</div>
+		        			<div class="blog-post-content">
+		        				<h4 class="post-title"><a href="blog-single.html">لزوم اهمیت گرافیک در طراحی سایت</a></h4>
+		        				<span class="meta-post-date">10 February 2084</span>
+		        			</div>
+		        		</div> <!-- /.blog-post -->
+		        	</div> <!-- /.col-md-4 -->
+		        	<div class="col-md-4 col-sm-6">
+		        		<div class="blog-post clearfix">
+		        			<div class="thumb-post">
+		        				<a href="blog-single.html"><img src="images/includes/blogthumb3.jpg" alt="" class="img-circle"></a>
+		        			</div>
+		        			<div class="blog-post-content">
+		        				<h4 class="post-title"><a href="blog-single.html">تفاوت های قالب های آماده با اختصاصی</a></h4>
+		        				<span class="meta-post-date">8 February 2084</span>
+		        			</div>
+		        		</div> <!-- /.blog-post -->
+		        	</div> <!-- /.col-md-4 -->
+		        </div> <!-- /.row -->
+		    </div> <!-- /.container -->
+	    </div> <!-- /.parallax-overlay -->
+	</section> <!-- /#blogPosts -->
+     <button onclick="topFunction()" id="myBtn" title="Go to top">برو بالا</button>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="footer-nav clearfix">
+						<ul class="footer-menu">
+							<li><a href="contact.html">تماس با ما</a></li>
+							<li><a href="portfolio.html">نمونه کار ها</a></li>
+							<li><a href="blog.html">بلاگ</a></li>
+							<li><a href="archives.html">سوالات متداول</a></li>
+							<li><a href="index.html">صفحه اصلی</a></li>
+						</ul> <!-- /.footer-menu -->
+					</nav> <!-- /.footer-nav -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright-text">Copyright &copy; 2017 Ceitc.ir 
+                    | Design: Ceitc.ir Group</p>
+					<p class="copyright-text" style="color:#F87318;">گروه برنامه نویسی والفجر با هدف ارتقا سطح به کار گیری از دانش برنامه نویسی و پیشرفت جامعه اطلاعاتی در سال 96 از بین دانشجویان کامپیوتر دانشکده فنی مهندسی شهید شمسی پور تهران تشکیل شده است</p>
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</footer> <!-- /.site-footer -->
+
+	<!-- Scripts -->
+	<script src="js/min/plugins.min.js"></script>
+	<script src="js/min/medigo-custom.min.js"></script>
+	</div>
+</body>
+</html>
